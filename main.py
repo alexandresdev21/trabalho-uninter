@@ -7,7 +7,7 @@ NOME_BANCO = "pedidos.db"
 STATUS_VALIDOS = ["Pendente", "Em Preparação", "Enviado", "Finalizado", "Cancelado"]
 
 
-# BANCO DE DADOS
+#BANCO DE DADOS#
 
 def conectar():
     """Abre e retorna uma conexão com o banco SQLite."""
@@ -70,7 +70,7 @@ def criar_tabelas():
     conexao.commit()
     conexao.close()
 
-# FUNÇÕES AUXILIARES DE ENTRADA
+#FUNÇÕES AUXILIARES DE ENTRADA#
 
 def ler_inteiro(mensagem, permitir_vazio=False):
     while True:
@@ -108,7 +108,7 @@ def pausar():
     input("\nPressione ENTER para continuar...")
 
 
-# CADASTRO DE CLIENTES
+#CADASTRO DE CLIENTES#
 
 def cadastrar_cliente():
     print("\n--- Cadastro de Cliente ---")
@@ -150,8 +150,7 @@ def buscar_cliente_por_id(cliente_id):
     conexao.close()
     return cliente
 
-
-# CADASTRO DE PRODUTOS
+#CADASTRO DE PRODUTOS#
 
 def cadastrar_produto():
     print("\n--- Cadastro de Produto ---")
@@ -195,7 +194,7 @@ def buscar_produto_por_id(produto_id):
     return produto
 
 
-# REGISTRO DE PEDIDOS
+#REGISTRO DE PEDIDOS#
 
 def criar_pedido():
     print("\n--- Novo Pedido ---")
@@ -310,7 +309,7 @@ def ver_detalhes_pedido():
     print(f"VALOR TOTAL: R$ {pedido['valor_total']:.2f}")
 
 
-# CONTROLE DE STATUS
+#CONTROLE DE STATUS#
 
 def atualizar_status_pedido():
     print("\n--- Atualizar Status do Pedido ---")
@@ -340,7 +339,7 @@ def atualizar_status_pedido():
     conexao.close()
     print(f"Status do pedido #{pedido_id} atualizado para '{novo_status}'.")
 
-# RELATÓRIOS
+#RELATÓRIOS#
 
 def relatorio_por_periodo():
     print("\n--- Relatório de Pedidos por Período ---")
@@ -390,7 +389,7 @@ def relatorio_por_cliente():
         total = sum(p["valor_total"] for p in pedidos)
         print(f"\nTotal de pedidos: {len(pedidos)} | Valor total somado: R$ {total:.2f}")
 
-# MENU PRINCIPAL
+#MENU PRINCIPAL#
 
 def menu_principal():
     while True:
