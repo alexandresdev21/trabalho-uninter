@@ -48,7 +48,7 @@ def buscar_por_id(tabela, item_id):
     return linha
 
 
-#CADASTRO DE CLIENTES
+#cadastro de clientes
 
 def cadastrar_cliente():
     print("\n--- Cadastro de Cliente ---")
