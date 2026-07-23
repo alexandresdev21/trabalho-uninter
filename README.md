@@ -4,7 +4,6 @@ Projeto da Unidade Curricular **Arquitetura de Sistemas Ciberfísicos e Modelage
 
 ## Equipe
 
-- Rafael Martins de Carvalho (ADS)
 - Alexandre Eugênio Souza da Silveira (ES)
 - André Felipe Coêlho Reis (ES)
 
@@ -67,10 +66,3 @@ O banco de dados `pedidos.db` será criado automaticamente na mesma pasta do `ma
 0. Sair
 ```
 
-## Dificuldades encontradas
-
-<!-- PLACEHOLDER: descreva aqui as dificuldades reais da equipe e como foram resolvidas -->
-
-## Vídeo / Apresentação
-
-O PPT de apresentação do projeto está disponível neste repositório em [`apresentacao.pptx`](./apresentacao.pptx).
